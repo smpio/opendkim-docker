@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add -U opendkim \
+RUN apk add -U opendkim socat \
     && rm -rf /var/cache/apk/*
 
 COPY entrypoint.sh /
